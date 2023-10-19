@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    font-weight: 400;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#attribution {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.6rem;
+  color : hsl(179, 100%, 13%);
+}
+
+#attribution a {
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+#attribution a:hover {
+    color: hsl(184, 100%, 22%);
+}
+
+.sedans{
+    background-color : hsl(31, 77%, 52%);
+    border-radius : 9px 0 0 9px;
+}
+.suvs{
+    background-color : hsl(184, 100%, 22%);
+}
+.luxury{
+    background-color : hsl(179, 100%, 13%);
+    border-radius :  0 9px 9px 0 ;
+}
+
+.sedans>.learn{
+    color : hsl(31, 77%, 52%);
+}
+.suvs>.learn{
+    color : hsl(184, 100%, 22%);
+}
+.luxury>.learn{
+    color : hsl(179, 100%, 13%);
+}
+
+.title{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform : uppercase;
+    font-size : 30px;
+    font-weight : 700;
+    color : hsl(0, 0%, 95%);
+}
+.text{
+    overflow: hidden;
+       display: -webkit-box;
+       -webkit-line-clamp: 5; /* number of lines to show */
+               line-clamp: 5;
+       -webkit-box-orient: vertical;
+}
+.learn{
+    background-color : hsl(0, 0%, 95%);
+}
+.learn:hover{
+    color : black !important;
+    background-color : hsl(0, 0%, 95%) !important;
+}
+
+@media (max-width: 767.9px) {
+  .sedans{
+      border-radius : 9px 9px 0 0px;
+  }
+  .luxury{
+      border-radius :  0 0 9px 9px ;
+  }
+  .text{
+    font-size : 19px;
+    -webkit-line-clamp: 4; /* number of lines to show */
+                   line-clamp: 4;
+           -webkit-box-orient: vertical;
+  }
+}
+
